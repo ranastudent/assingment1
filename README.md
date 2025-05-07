@@ -14,3 +14,15 @@ ANS : In TypeScript, both interfaces and type aliases can be used to define the 
    * Use types for any kind of data like array and object .
 4. Syntax Capabilities:
    * Types can represent unions, intersections, and mapped types, which interfaces cannot do directly.
+
+Q2---->What is the use of the keyof keyword in TypeScript? Provide an example.
+
+ANS : keyof is helpful when you want to refer to the keys of a type safely and dynamically, especially in generic functions or utility types.  just like keyof T means 'the keys of T  
+      Example :  
+      type Person = {
+      name: string;
+      age: number;
+    };
+
+    type PersonKeys = keyof Person;
+    // here  PersonKeys is "name" | "age"

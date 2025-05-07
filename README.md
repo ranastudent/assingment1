@@ -26,3 +26,33 @@ ANS : keyof is helpful when you want to refer to the keys of a type safely and d
       };
       type PersonKeys = keyof Person;
       // here  PersonKeys is "name" | "age"
+
+
+Q3---->Explain the difference between any, unknown, and never types in TypeScript.
+
+ANS : 1. any
+            * Disables type checking completely.
+            * You can assign anything to it, and you can also access any property or method without error.
+      2. unknown
+            * Similar to any, but type-safe.
+            * You can assign anything to it, but you cannot use it until you check or assert its type.
+            Example :
+            
+                      let value: unknown = "hello";
+                      // value.toUpperCase();  Error
+                      if (typeof value === "string") {
+                      console.log(value.toUpperCase()); //  Safe
+                      }
+
+      3. never
+          * Represents values that never occur.
+          * Used in:
+                  * Functions that never return (e.g., throw an error or infinite loop).
+                  * Exhaustiveness checks in switch statements
+                  Example :
+                            function throwError(message: string): never {
+                            throw new Error(message); // never returns
+                            }
+
+
+      

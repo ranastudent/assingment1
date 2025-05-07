@@ -43,10 +43,6 @@ ANS : 1. any
           * Used in:
                   * Functions that never return (e.g., throw an error or infinite loop).
                   * Exhaustiveness checks in switch statements
-                  Example :
-                            function throwError(message: string): never {
-                            throw new Error(message); // never returns
-                            }
 
 
       

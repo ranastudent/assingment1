@@ -36,16 +36,8 @@ ANS : 1. any
       2. unknown
             * Similar to any, but type-safe.
             * You can assign anything to it, but you cannot use it until you check or assert its type.
-            Example :
-            
-                      let value: unknown = "hello";
-                      // value.toUpperCase();  Error
-                      if (typeof value === "string") {
-                      console.log(value.toUpperCase()); //  Safe
-                      };
-
+          
                       
-
     3. never
           * Represents values that never occur.
           * Used in:

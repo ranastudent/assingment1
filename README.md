@@ -42,9 +42,11 @@ ANS : 1. any
                       // value.toUpperCase();  Error
                       if (typeof value === "string") {
                       console.log(value.toUpperCase()); //  Safe
-                      }
+                      };
 
-      3. never
+                      
+
+    3. never
           * Represents values that never occur.
           * Used in:
                   * Functions that never return (e.g., throw an error or infinite loop).

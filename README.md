@@ -18,11 +18,11 @@ ANS : In TypeScript, both interfaces and type aliases can be used to define the 
 Q2---->What is the use of the keyof keyword in TypeScript? Provide an example.
 
 ANS : keyof is helpful when you want to refer to the keys of a type safely and dynamically, especially in generic functions or utility types.  just like keyof T means 'the keys of T  
-      Example :  
+      Example :
+      
       type Person = {
       name: string;
       age: number;
-    };
-
-    type PersonKeys = keyof Person;
-    // here  PersonKeys is "name" | "age"
+      };
+      type PersonKeys = keyof Person;
+      // here  PersonKeys is "name" | "age"

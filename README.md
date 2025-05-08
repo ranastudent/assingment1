@@ -57,5 +57,65 @@ ANS : 1. any
                               }
 
 
+Q4.What is the use of enums in TypeScript? Provide an example of a numeric and string enum.
+
+ANS: enums (short for enumerations) are a feature that allows you to define a set of named constants.   Enums come in two main types:
+      1. Numeric Enums
+      2. String Enums
+
+     1. Numeric Enum
+      In a numeric enum, members are assigned numeric values, starting from 0 by default or from a custom value.
+
+      typescript
+      Copy
+      Edit
+      enum Direction {
+      Up,      // 0
+      Down,    // 1
+      Left,    // 2
+      Right    // 3
+      }
+
+      // Usage
+      let move: Direction = Direction.Up;
+      console.log(move); // Output: 0
+
+      2. String Enum
+        In a string enum, each member must be initialized with a string literal. This is often more readable in logs and debugging.
+
+        typescript
+        Copy
+        Edit
+        enum Direction {
+        Up = "UP",
+        Down = "DOWN",
+        Left = "LEFT",
+        Right = "RIGHT"
+        }
+
+        // Usage
+        let move: Direction = Direction.Left;
+        console.log(move); // Output: "LEFT"
+
+        Why Use Enums?
+          Improves readability and maintainability
+
+          Ensures type safety
+
+          Provides semantic meaning to sets of values
+
+          Useful in switch statements or condition checks involving fixed categories
+
+          Would you like to see how enums are compiled to JavaScript?
+
+
+
+
+
+
+
+
+
+
 
       

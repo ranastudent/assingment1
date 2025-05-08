@@ -109,6 +109,23 @@ ANS: enums (short for enumerations) are a feature that allows you to define a se
           Would you like to see how enums are compiled to JavaScript?
 
 
+Q5.What is type inference in TypeScript? Why is it helpful?
+
+
+ANS : Type inference in TypeScript is the compiler's ability to automatically deduce the type of a variable
+
+      Why Type Inference Is Helpful
+        1.Reduces Boilerplate: You write less code without losing type safety.
+
+        2.Improves Readability: Code is cleaner and easier to understand.
+
+        3.Maintains Type Safety: The compiler still enforces correct types and flags errors.
+
+        4.Enhances Developer Experience: IDEs use inferred types for autocompletion and inline documentation.
+
+
+
+
 
 
 
